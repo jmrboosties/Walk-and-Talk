@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="28" height="20" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="pokemon" tilewidth="16" tileheight="16">
+  <image source="pokemontileset.png" width="128" height="2613"/>
+ </tileset>
+ <layer name="Ground" width="28" height="20" collisions="false" foreground="false">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYKQilqKyeYPVzsHopsEYDoMJmwGxORBb0Mk+OyC2B2KHQeD3UTw8Mb3TNMg+HjraN5qHRjE+DADSLAXE
+  </data>
+ </layer>
+ <layer name="GroundAccessories" width="28" height="20" collisions="false" foreground="false">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMAog4CUjfe37SGf7RsHwAQCW6gHd
+  </data>
+ </layer>
+ <layer name="GroundCollision" width="28" height="20" collisions="true" foreground="false">
+  <data encoding="base64" compression="zlib">
+   eJzV1LlOw0AUheGZkD40CBoEHbxGWAq2gq1g7YEAYhe72DsEgRRsBVubEt4DOuhIFzp4Af5IM8pkhBkbOxJc6dM44+ge39hOQghRiYTP1a4spBI3jqtRY3y29/2uXnlmVkEd6tVxo7Gvr1ufd612PeAxAPO6GzAWE2IcE0hhElOYjn0TFqB0jp4vrvZn6DuLOcxjAYtYcuQd82OlcYJTZGTpeZ2jcw9xhGX6rmAVa1jHBjYdeWf0P8cFLnFl5dnz6dqi7zZ2sIs97OPAkXdN/xvc4g73jvnKXV7zlav+ynxJ7lMTmtGC1pDvga4n7uezLOZWqf02+rejA53oiijvhaxXWZyvVu13078HvehDf0R5b2TlZOn9q8AA/QcxhGGMRJSXJ+td/vx8Fv5zMtHEiQ+yPuXvn89R6Y+usO9f0Lyw799/my/saud4fe8LxXZMQg==
+  </data>
+ </layer>
+ <layer name="WaterBarriers" width="28" height="20" collisions="false" foreground="false">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMAqGLtgJxLsI4N1UtO8gEWoOD2H7TgLxKSSMDkBip6loHzpA9i8+fwEAnqgQjQ==
+  </data>
+ </layer>
+ <layer name="Tops" width="28" height="20" collisions="false" foreground="true">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhZIJGJgSEJiJOBOAWIU4E4DYjTmSgzlx2IOajiQgjoZGRg6ALibiDuAeJeRioaPgpGARRYAtO9FRBbA7ENENtSmA9wAV7aGAsGF+mcN27S2b6HJNjXSztn0BRQu/wcBagAFr7k0oTMGygAAKVeCpQ=
+  </data>
+ </layer>
+</map>

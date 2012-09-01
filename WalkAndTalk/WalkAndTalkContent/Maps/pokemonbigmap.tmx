@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="48" height="24" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="pokemon" tilewidth="16" tileheight="16">
+  <image source="pokemontileset.png" width="128" height="2613"/>
+ </tileset>
+ <layer name="GroundLevel" width="48" height="24" collisions="false" foreground="false">
+  <data encoding="base64" compression="zlib">
+   eJztz7EJACAMRNHcGtlE9x/MVkiEFAoRfvGra97JzEREdLGp2L57A+MpL/i796s/c2c/un7Cjx8/fvz48b9vFLz48VPeAtzQLbI=
+  </data>
+ </layer>
+ <layer name="GroundAccessory" width="48" height="24" collisions="false" foreground="false">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUDHXAhgcPBUAL928CYikoTWtAq/BnpFA/sYDa7pdCYtPLD6NgFIyCUTAKRsEoGAWjADvA19YjFQ8EGHU/9dwPAAvtA5k=
+  </data>
+ </layer>
+ <layer name="GroundCollision" width="48" height="24" collisions="true" foreground="false">
+  <data encoding="base64" compression="zlib">
+   eJzVmDlPAkEYhoddEi28CvEEb3tbrxjvAGoCaAFoof4H/4dX4VV49XZa0/uffMky8XOc2TlYyPIlT4a9Pp59M0wmMKavDzAMRkLGb0t0/WxHsZKC/ySYChlt/XX9dGM/GCDHMm/qrytb/2ZLlbusWuXfk2CsF/Ql/vdb9BhbAstgBax6f6/z/D8N+CLPXaLPFbgGN+DWc/cfhHcKDEn819F3A2yCLbAt+Ovmv6ru0OcePIBH8NSEfxreGTDR8N+pvw8L5nAWfXMgD/bAvhecTzbu4/nz0bSe0ecFvII38K7wr1eKPGcy/+temcbnAvoWQQkcgiPB3zV/Vcn8uEvNwv+CBZThWwFVcAxOvN9r1F+Wv8s76fxM/U2Kzh+Zq7immpRsjtM1QOVP1yDuv6Z5D13+LuW6/tM1iPvvCv5ZHOdAnvzOw/KnVWuxP12DVPOngPNFUCL+ccmflsq/jPMVUHXIPw7+pzh/Bs47NH/ZfSb5d4FuyRiFv2zvY+Nvkr/pXtvFX7b3Ua2f4rFp/uIeI+xdbf3FvQ/1F9dP8bgV+UdRCxHPf5v821lxzd+0Oj3/A0n+oz5jY2AcpEHGb0/+Uf3/MA3fGTAL5sC83578Vd9hOv4AfRPmEw==
+  </data>
+ </layer>
+ <layer name="WaterBarriers" width="48" height="24" collisions="false" foreground="false">
+  <data encoding="base64" compression="zlib">
+   eJztjjsKgEAQQ/f+BxErEQu1FSv1MNpp6ZRhEFQI7Ic8CGTIwr4QOEw/3s6kP5nIPy7yj0tJ/pWlc3sNPXX/5mFvocufD/r3lsHtI/TU/d+QP5+S/XfLAXdu/qflgjs3f4/8+SyW9WO2SI5CCMHkBgQXLew=
+  </data>
+ </layer>
+ <layer name="GroundTop" width="48" height="24" collisions="false" foreground="true">
+  <data encoding="base64" compression="zlib">
+   eJzt1L0JACAMhNFkKht1A/dfx0ZRRPGnivA9uCopjxMBYIFXkVAyU29x8wf8zNFrAHgy7id7ipWkLcCtvj+ngR0ZRNIHeQ==
+  </data>
+ </layer>
+ <layer name="Tops" width="48" height="24" collisions="false" foreground="true">
+  <data encoding="base64" compression="zlib">
+   eJztlk0Lg0AMREdF7EVqv2j/stb+504PeylSdKSbKHkw7GXDhkdY0gA4IMjNkemsmyB1odXdmYdQ15fAwDyZkXmV2vtrSf4b+Jr/duY91f8S5vai4GX+VX759zZTU3jyr/xBOeb/n3jyrxD+bQn/61F3nw/h35bwb0v4t+Xb/6kCzsyFuTK3Kk8fadddeu7N/9ZI/t8gNgdr
+  </data>
+ </layer>
+</map>
