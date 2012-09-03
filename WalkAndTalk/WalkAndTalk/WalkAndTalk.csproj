@@ -126,6 +126,7 @@
     <Compile Include="Engine\Camera.cs" />
     <Compile Include="Engine\Character.cs" />
     <Compile Include="Engine\CollisionObject.cs" />
+    <Compile Include="Engine\Drawables\FPSCounter.cs" />
     <Compile Include="Engine\GameLauncher.cs" />
     <Compile Include="Engine\GameScreen.cs" />
     <Compile Include="Engine\InputHandler.cs" />
@@ -198,9 +199,6 @@
       <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="WalkAndTalk_TemporaryKey.pfx" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />

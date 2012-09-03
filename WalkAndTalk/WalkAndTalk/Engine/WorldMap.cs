@@ -67,7 +67,7 @@ namespace WalkAndTalk.Engine
             }
         }
 
-        public bool FreeMovement(Vector2 position, MovementDirection direction)
+      /*  public bool FreeMovement(Vector2 position, MovementDirection direction)
         {
             switch (direction)
             {
@@ -80,9 +80,8 @@ namespace WalkAndTalk.Engine
                         return true;
                     break;
             }
-
             return false;
-        }
+        }*/
 
     }
 }

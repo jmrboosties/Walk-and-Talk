@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using WalkAndTalk.Engine;
 using WalkAndTalk.Engine.Net;
+using WalkAndTalk.Engine.Drawables;
 
 namespace WalkAndTalk
 {
@@ -28,7 +29,14 @@ namespace WalkAndTalk
         {
             get { return mGameNetClient; }
         }
-        static GameNetClient mGameNetClient = new GameNetClient();
+        static GameNetClient mGameNetClient;
+
+        public static bool IsOnline
+        {
+            get { return mIsOnline; }
+            set { mIsOnline = value; }
+        }
+        static bool mIsOnline;
 
         public int ScreenHeight
         {
@@ -60,8 +68,14 @@ namespace WalkAndTalk
             mScreenManager = new ScreenManager(this);
 
             Components.Add(mScreenManager);
+            Components.Add(new FPSCounter(this));
 
             mScreenManager.AddScreen(new Menu());
+
+            IsOnline = true;
+
+            if (IsOnline)
+                mGameNetClient = new GameNetClient();
         }
 
         #endregion

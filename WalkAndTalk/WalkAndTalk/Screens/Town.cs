@@ -19,11 +19,13 @@ namespace WalkAndTalk.Screens
             base.LoadContent();
             Map = mContentManager.Load<WorldMap>("Maps/littletown");
             mPlayer = new Player(mContentManager.Load<Texture2D>("CharacterSheets/hikersheet"), new Vector2(5, 15), this);
-            mNPCs.Add(new NPC(mContentManager.Load<Texture2D>("karatemansheet"), new Vector2(22, 11), this, 4));
-            mNPCs.Add(new NPC(mContentManager.Load<Texture2D>("CharacterSheets/captainsheet"), new Vector2(14, 4), this, 4));
+            //mNPCs.Add(new NPC(mContentManager.Load<Texture2D>("karatemansheet"), new Vector2(22, 11), this, 4));
+            //mNPCs.Add(new NPC(mContentManager.Load<Texture2D>("CharacterSheets/captainsheet"), new Vector2(14, 4), this, 4));
             mMusic = mContentManager.Load<Song>("Music/town3");
             mCamera = new Camera(this);
-            GameLauncher.GameNetClient.Start(mPlayer);
+
+            if(GameLauncher.IsOnline)
+                GameLauncher.GameNetClient.Start(mPlayer);
         }
 
         public override void UnloadContent()

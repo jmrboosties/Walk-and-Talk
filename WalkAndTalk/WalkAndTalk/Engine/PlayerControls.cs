@@ -44,7 +44,7 @@ namespace WalkAndTalk.Engine
                 HandleMovement(key, gameTime, running);
             }
             //DEBUG BELOW
-            if(keyState.IsKeyDown(Keys.E)) 
+            if (keyState.IsKeyDown(Keys.E) && GameLauncher.IsOnline)
             {
                 Console.WriteLine(GameLauncher.GameNetClient.PlayerList.Count);
                 foreach (var player in GameLauncher.GameNetClient.PlayerList)
@@ -93,7 +93,8 @@ namespace WalkAndTalk.Engine
                     mPlayer.Coordinates = position;
                     mPlayer.SetMovement(action);
 
-                    GameLauncher.GameNetClient.SendToServer(mPlayer.Coordinates, isRunning);
+                    if(GameLauncher.IsOnline)
+                        GameLauncher.GameNetClient.SendToServer(mPlayer.Coordinates, isRunning);
                 }
             }
         }

@@ -8,9 +8,9 @@ using Lidgren.Network.Xna;
 namespace PokemonGameServer
 {
 #if WINDOWS || XBOX
-    static class Program
+    public static class HelpMe
     {
-
+        public static Random Random = new Random();
         static NetServer Server;
         static NetPeerConfiguration Config;
 

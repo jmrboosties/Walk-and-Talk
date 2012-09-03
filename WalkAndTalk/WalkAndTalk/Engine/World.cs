@@ -86,11 +86,16 @@ namespace WalkAndTalk.Engine
             {
                 npc.Draw(SpriteBatch, this, gameTime);
             }
-            foreach (var peer in mPeerPlayers)
+
+            if (GameLauncher.IsOnline)
             {
-                if (peer.Key != GameLauncher.GameNetClient.ClientsUniqueId)
-                    peer.Value.Draw(SpriteBatch, this, gameTime);
+                foreach (var peer in mPeerPlayers)
+                {
+                    if (peer.Key != GameLauncher.GameNetClient.ClientsUniqueId)
+                        peer.Value.Draw(SpriteBatch, this, gameTime);
+                }
             }
+        
             SpriteBatch.End();
 
             SpriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied, SamplerState.PointWrap, null, null);
@@ -119,7 +124,8 @@ namespace WalkAndTalk.Engine
                 npc.Update(gameTime);
             }
 
-            ManagePeerPlayers(gameTime);
+            if(GameLauncher.IsOnline)
+                ManagePeerPlayers(gameTime);
             
             base.Update(gameTime, otherScreenHasFocus, coveredByOtherScreen);
         }

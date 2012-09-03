@@ -19,7 +19,9 @@ namespace WalkAndTalk.Screens
             Map = mContentManager.Load<WorldMap>("Maps/field");
             mPlayer = new Player(mContentManager.Load<Texture2D>("karatemansheet"), new Vector2(5, 5), this);
             mCamera = new Camera(this);
-            GameLauncher.GameNetClient.Start(mPlayer);
+
+            if(GameLauncher.IsOnline)
+                GameLauncher.GameNetClient.Start(mPlayer);
         }
 
         public override void UnloadContent()

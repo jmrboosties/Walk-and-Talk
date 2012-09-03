@@ -135,14 +135,27 @@ namespace WalkAndTalk.Engine.Net
             {
                 mPlayerList.Clear();
                 
-                int count = 0;
-                count = nim.ReadInt32();
+                int playerCount = 0;
+                playerCount = nim.ReadInt32();
 
-                for (int i = 0; i < count; i++)
+                int npcCount = 0;
+                npcCount = nim.ReadInt32();
+
+                for (int i = 0; i < playerCount; i++)
                 {
                     PlayerPrimitive player = new PlayerPrimitive();
                     nim.ReadAllProperties(player);
                     if(player.UniqueId != ClientsUniqueId)
+                        Console.WriteLine("player: " + player.Name + " x: " + player.X + "; y: " + player.Y);
+
+                    mPlayerList.Add(player.UniqueId, player);
+                }
+
+                for (int i = 0; i < npcCount; i++)
+                {
+                    PlayerPrimitive player = new PlayerPrimitive();
+                    nim.ReadAllProperties(player);
+                    if (player.UniqueId != ClientsUniqueId)
                         Console.WriteLine("player: " + player.Name + " x: " + player.X + "; y: " + player.Y);
 
                     mPlayerList.Add(player.UniqueId, player);
